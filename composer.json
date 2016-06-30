@@ -1,0 +1,27 @@
+{
+	"name": "dashicons-media-modal",
+	"description": "A sample plugin to show how to extend the WordPress Media Modal..",
+	"version": "0.1.0",
+	"type": "wordpress-plugin",
+	"keywords": [],
+
+	"license": "none",
+	"authors": [
+		{
+			"name": "Michael Phillips",
+			"email": "",
+
+			"role": "Developer"
+		}
+	],
+    "minimum-stability": "dev",
+	"require": {
+		"php": ">=5.3"
+	},
+    "require-dev": {
+	    "antecedent/patchwork": "1.2.*",
+        "phpunit/phpunit"     : "*@stable",
+	    "brianium/paratest"   : "dev-master",
+        "10up/wp_mock"        : "dev-master"
+    }
+}

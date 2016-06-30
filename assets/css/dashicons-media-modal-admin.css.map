@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "dashicons-media-modal-admin.css",
+	"sources": [
+		"sass/media-modal.scss"
+	],
+	"mappings": "AAAA,AAAiB,gBAAD,CAAC,KAAK,CAAC;EACtB,MAAM,EAAE,KAAM;EACd,OAAO,EAAE,aAAc;EACvB,WAAW,EAAE,MAAO;EACpB,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,CAAE,GACf",
+	"names": []
+}
