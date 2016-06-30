@@ -1,11 +1,4 @@
 # Dashicons Media Modal
-Contributors:      Michael Phillips
-Donate link:
-Tags:
-Requires at least: 4.4.2
-Tested up to:      4.4.2
-Stable tag:        0.1.0
-License:           none
 
 A sample plugin to show how to extend the WordPress Media Modal.
 
