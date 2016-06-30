@@ -1,6 +1,10 @@
 ( function( $, window, wp, undefined ) { 
 	'use strict'; 
 
+/**
+ * Templates for the Dashicons media tab.
+ */
+
 window.JST = {};
 
 /**
@@ -21,6 +25,9 @@ window.JST['dashicon-view'] = _.template(
 	'<i class="dashicons <%= className %>"></i>'
 );
 
+/**
+ * Model to represent a Dashicon.
+ */
 var DashiconItem = Backbone.Model.extend({
 	defaults: {
 		title: '',
@@ -28,10 +35,16 @@ var DashiconItem = Backbone.Model.extend({
 	},
 });
 
+/**
+ * Collection to represent a list of Dashicons.
+ */
 var DashiconCollection = Backbone.Collection.extend({
 	model: DashiconItem,
 });
 
+/**
+ * View to represent a Dashicon in the media modal.
+ */
 var DashiconsMediaItemView = Backbone.View.extend({
 	tagName: 'li',
 	template: JST['dashicons-list-item-view'],
@@ -61,6 +74,9 @@ var DashiconsMediaItemView = Backbone.View.extend({
 	},
 });
 
+/**
+ * View to represent a Dashicon.
+ */
 var DashiconView = Backbone.View.extend({
 	template: JST['dashicon-view'],
 
@@ -94,6 +110,9 @@ var DashiconView = Backbone.View.extend({
 	}
 });
 
+/**
+ * The toolbar used on the Dashicons media modal tab.
+ */
 var DashiconsMediaToolbar = wp.media.view.Toolbar.extend({
 	initialize: function() {
 		_.defaults( this.options, {
@@ -150,6 +169,9 @@ var DashiconsMediaToolbar = wp.media.view.Toolbar.extend({
 	}
 });
 
+/**
+ * The view used for the frame on the Dashicons media modal tab. This extends the wp.media.View object provided by WordPress.
+ */
 var DashiconsMediaFrameView = wp.media.View.extend({
 	tagName: 'ul',
 	className: 'media-dashicons attachments clearfix',
@@ -253,6 +275,9 @@ var DashiconsMediaFrameView = wp.media.View.extend({
 	},
 });
 
+/**
+ * Class to represent the frame used for the Dashicons media modal tab.
+ */
 var DashiconsMediaFrame = function( opts ) {
 	this.initialize( opts );
 };
@@ -434,6 +459,9 @@ DashiconsMediaFrame.prototype = {
 	},
 };
 
+/**
+ * Class to represent the state controller for the Dashicons media modal tab. This extends the wp.media.controller.State object provided by WordPress.
+ */
 var DashiconsMediaFrameController = wp.media.controller.State.extend({
 	/**
 	 * Collection to hold the selected items in the media modal.
@@ -548,6 +576,9 @@ var DashiconsMediaFrameController = wp.media.controller.State.extend({
 	},
 });
 
+/**
+ * Class to represent the Dashicons media modal tab.
+ */
 var DashiconsMediaTabApp = function() {};
 
 DashiconsMediaTabApp.prototype = {

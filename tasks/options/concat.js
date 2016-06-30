@@ -1,6 +1,6 @@
 module.exports = {
 	options: {
-		stripBanners: true,
+		stripBanners: false,
 			banner: '/*! <%= pkg.title %> - v<%= pkg.version %>\n' +
 		' * <%= pkg.homepage %>\n' +
 		' * Copyright (c) <%= grunt.template.today("yyyy") %>;' +
