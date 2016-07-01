@@ -6,8 +6,6 @@ var DashiconsMediaItemView = Backbone.View.extend({
 	template: JST['dashicons-list-item-view'],
 
 	initialize: function( options ) {
-		//_.bindAll( this, 'render' );
-
  		this.model.bind( 'change', this.render );
 	},
 

@@ -57,7 +57,6 @@ var DashiconsMediaFrameView = wp.media.View.extend({
 		this.getSelection().add( this.collection._byId[id] );
 
 		// Trigger the change event on the collection.
-		// @todo This should be triggered automatically.
 		this.controller.state().selection.trigger( 'change' );
 	},
 
@@ -75,7 +74,6 @@ var DashiconsMediaFrameView = wp.media.View.extend({
 		this.getSelection().remove( this.collection._byId[id] );
 
 		// Trigger the change event on the collection.
-		// @todo This should be triggered automatically.
 		this.controller.state().selection.trigger( 'change' );
 
 	},

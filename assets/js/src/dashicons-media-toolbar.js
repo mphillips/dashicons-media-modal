@@ -4,7 +4,6 @@
 var DashiconsMediaToolbar = wp.media.view.Toolbar.extend({
 	initialize: function() {
 		_.defaults( this.options, {
-			//event: 'insert',
 			close: false,
 			items: {
 				insertButton: {

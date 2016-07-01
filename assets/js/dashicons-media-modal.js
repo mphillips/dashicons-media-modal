@@ -50,8 +50,6 @@ var DashiconsMediaItemView = Backbone.View.extend({
 	template: JST['dashicons-list-item-view'],
 
 	initialize: function( options ) {
-		//_.bindAll( this, 'render' );
-
  		this.model.bind( 'change', this.render );
 	},
 
@@ -116,7 +114,6 @@ var DashiconView = Backbone.View.extend({
 var DashiconsMediaToolbar = wp.media.view.Toolbar.extend({
 	initialize: function() {
 		_.defaults( this.options, {
-			//event: 'insert',
 			close: false,
 			items: {
 				insertButton: {
@@ -228,7 +225,6 @@ var DashiconsMediaFrameView = wp.media.View.extend({
 		this.getSelection().add( this.collection._byId[id] );
 
 		// Trigger the change event on the collection.
-		// @todo This should be triggered automatically.
 		this.controller.state().selection.trigger( 'change' );
 	},
 
@@ -246,7 +242,6 @@ var DashiconsMediaFrameView = wp.media.View.extend({
 		this.getSelection().remove( this.collection._byId[id] );
 
 		// Trigger the change event on the collection.
-		// @todo This should be triggered automatically.
 		this.controller.state().selection.trigger( 'change' );
 
 	},
